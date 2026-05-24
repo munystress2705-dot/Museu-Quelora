@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0f172a; /* Um tom escuro azulado muito elegante para o fundo */
+  --foreground: #f8fafc; /* Letras claras para dar excelente leitura */
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Courier New', Courier, monospace; /* Uma fonte que lembra o estilo retrô de pixels */
+  overflow-x: hidden;
+}
+
+/* Estilo personalizado para a barra de rolagem do chat ficar fininha */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
